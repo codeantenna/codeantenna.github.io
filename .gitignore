@@ -27,3 +27,7 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+
+# docs/, test/ 폴더에 있는 모든 파일 무시
+docs/
+test/
