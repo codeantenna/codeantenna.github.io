@@ -1,9 +1,122 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
-search: false
----
+--- 
+# Only the main Sass file needs front matter (the dashes are enough) 
+search: false 
+--- 
 
 @charset "utf-8";
 
+/*
+   Colors
+   ========================================================================== */
+$gray: #7a8288 !default;
+$dark-gray: mix(#000, $gray, 50%) !default;
+$darker-gray: mix(#000, $gray, 60%) !default;
+$light-gray: mix(#fff, $gray, 50%) !default;
+$lighter-gray: mix(#fff, $gray, 90%) !default;
+
+$background-color: #ffffff !default;
+$primary-color: #2aa0bb !default;
+$footer-background-color: #296c99 !default;
+$link-color: #358CA7 !default;
+$code-background-color: #eeeeee !default;
+
+$text-color: $dark-gray !default;
+$muted-text-color: mix(#fff, $text-color, 20%) !default;
+$border-color: $lighter-gray !default;
+
+/*
+   Grid
+   ========================================================================== */
+$right-sidebar-width-narrow: 180px !default;
+$right-sidebar-width: 270px !default;
+$right-sidebar-width-wide: 360px !default;
+
+/*
+   Breakpoints
+   ========================================================================== */
+$max-width: 1400px !default;
+
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/*
+     Table of contents navigation
+     ========================================================================== */
+
+.toc {
+.nav__title {
+    background: $primary-color;
+    text-align: center;
+}
+// Scrollspy marks toc items as .active when they are in focus
+.active a {
+    @include yiq-contrasted(#ffffff);
+    color: $primary-color;
+}
+}
+    
+
+/*
+   검색 키워드 글자 크기
+   ========================================================================== */
+.search-content .search-input {
+    font-size: 1.2em !important;
+}
+
+/*
+   링크의 밑줄 제거
+   ========================================================================== */
+a {
+    text-decoration: none !important;
+}
+
+/*
+   inline 코드 블록 스타일 
+   ========================================================================== */
+p>code,
+a>code,
+li>code,
+figcaption>code,
+td>code {
+    font-size: 0.9em;
+    color: $flickr-color;
+
+    &:before,
+    &:after {
+        letter-spacing: -0.2em;
+        content: "\00a0";
+        /* non-breaking space*/
+    }
+}
+
+/*
+   오른쪽 사이드바의 패딩 설정
+   ========================================================================== */
+
+.sidebar__right {
+    @include breakpoint($large) {
+        padding-left: 1.5em; 
+    }
+}
+
+
+.page__content {
+    h2, h3 {
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid $border-color;
+    }
+}
+    
+/*
+   오버레이 헤딩 
+   ========================================================================== */
+.page__hero {
+
+    &--overlay {
+
+        h1 {
+            color: #fff;
+        }
+    }
+}
