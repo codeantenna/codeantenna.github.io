@@ -88,7 +88,7 @@ li>code,
 figcaption>code,
 td>code {
     font-size: 0.9em;
-    color: $flickr-color;
+    color: $dribbble-color;
 
     &:before,
     &:after {
@@ -117,11 +117,31 @@ pre {
 }
 
 .page__content :not(pre) > code {
-    // padding-top: 0.1rem;
-    // padding-bottom: 0.1rem;
     font-size: .9em;
-    // background: #eee;
-    // border-radius: 4px;
+}
+
+/*
+   notice style
+   ========================================================================== */
+.notice {
+    @include notice($light-gray);
+    p > a {
+        font-weight: bold;
+        color: $dribbble-color;
+    }
+    hr{
+        border-top : 1px solid $light-gray;
+    }
+    .highlighter-rouge, table, p{
+        font-size: 0.98em;
+    }
+}
+
+.notice--info {
+    ul a {
+        font-weight: bold;
+        font-size:  1.2em;
+    }
 }
 
 /*
@@ -134,11 +154,17 @@ pre {
     }
 }
 
-
+/*
+   content 글자 크기 설정
+   ========================================================================== */
 .page__content {
     h2, h3 {
         padding-bottom: 0.5em;
         border-bottom: 1px solid $border-color;
+    }
+
+    blockquote li{
+        font-size: $type-size-6;
     }
 }
     
@@ -146,9 +172,7 @@ pre {
    오버레이 헤딩 
    ========================================================================== */
 .page__hero {
-
     &--overlay {
-
         h1 {
             color: #fff;
         }
@@ -157,4 +181,4 @@ pre {
 
 .page__lead {
     font-size: $type-size-5;
-  }
+}

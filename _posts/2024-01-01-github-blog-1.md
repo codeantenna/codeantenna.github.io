@@ -73,8 +73,9 @@ excerpt_separator: <!--more-->
 지금까지 블로그 작업을 위한 로컬 환경에 대해 주로 살펴보았다. `jekyll new`로 생성된 블로그는 간단한 샘플 페이지로 구성되어 있다. 검색이나 댓글 등 필요한 기능을 처음부터 구현하려면 상당한 시간이 필요하다. 그래서 Jekyll 테마를 활용하고, 커스터마이징하는 방법을 작업 순서대로 소개하면서 블로그를 완성하려고 한다.
 
 ------
-
-**참고한 글**
+>**참고한 글**  
+> 
+> 기록으로 남겨주셔서 감사합니다. 덕분에 이 글이 완성됐어요.  &nbsp; <i class="fa fa-gift" style="color: MediumVioletRed"></i> 
  1. [Minimal Mistakes Quick-Start Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)  
  2. [GitHub Pages 블로그 따라하기](https://devinlife.com/howto/)  
  3. [OpenSource Blogging with Jekyll GitHub VSCode Part1](https://jloudon.com/blogging/OpenSource-Blogging-with-Jekyll-GitHub-VSCode-Part1/)

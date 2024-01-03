@@ -125,9 +125,8 @@ gem 'tzinfo-data'
 공개할 글이 준비되면 `git push`를 실행하여 로컬에서 작업한 내용을 서버에 업데이트한다. 웹에서의 화면과 로컬에서의 화면이 동일한지 비교해보고, 이렇게 함으로써 로컬에서의 변경사항이 서버에 적용됐음을 알 수 있다.<br/> <br/> 
 
 ------
-
-**참고한 글**
+>**참고한 글**  
+> 
+> 기록으로 남겨주셔서 감사합니다. 덕분에 이 글이 완성됐어요.  &nbsp; <i class="fa fa-gift" style="color: MediumVioletRed"></i> 
  1. [Minimal Mistakes Quick-Start Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)  
  2. [GitHub Pages 블로그 따라하기](https://devinlife.com/howto/)  
-
-
