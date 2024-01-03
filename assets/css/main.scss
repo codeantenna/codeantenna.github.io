@@ -34,7 +34,7 @@ $right-sidebar-width-wide: 360px !default;
 /*
    Breakpoints
    ========================================================================== */
-$max-width: 1400px !default;
+$max-width: 1440px !default;
 
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
@@ -55,13 +55,22 @@ $max-width: 1400px !default;
     color: $primary-color;
 }
 }
-    
+
+/*
+   본문  글자 크기
+   ========================================================================== */
+.page__content p, .page__content li, .page__content dl {
+    font-size: 0.9em;
+}
+
 /*
    검색 키워드 글자 크기
    ========================================================================== */
 .search-content .search-input {
     font-size: 1.2em !important;
 }
+
+
 
 /*
    링크의 밑줄 제거
@@ -87,6 +96,32 @@ td>code {
         content: "\00a0";
         /* non-breaking space*/
     }
+}
+
+/*
+   code snippet
+   ========================================================================== */
+
+strong >code {
+    color: $primary-color;
+    font-size: .98em;  
+}
+
+tt,
+code,
+kbd,
+samp,
+pre {
+  font-family: $monospace;
+  font-size: .98em;
+}
+
+.page__content :not(pre) > code {
+    // padding-top: 0.1rem;
+    // padding-bottom: 0.1rem;
+    font-size: .9em;
+    // background: #eee;
+    // border-radius: 4px;
 }
 
 /*
@@ -119,3 +154,7 @@ td>code {
         }
     }
 }
+
+.page__lead {
+    font-size: $type-size-5;
+  }

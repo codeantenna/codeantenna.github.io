@@ -20,7 +20,7 @@ date_format              : "%Y년 %m월 %d일"
 title                    : "Stick @ IT"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "unknown"
+name                     : "steady companion"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -42,7 +42,7 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    repo                 : "codeantenna/codeantenna.github.io"
+    repo                 : "codeantenna/blog_comments"
     theme                : "github-light" #(default), "github-dark"
     issue_term           : "url" #(default)
   giscus:
@@ -107,14 +107,17 @@ analytics:
 # Site Author
 author:
   name             : "메멘토 - 코드 리마인더"
-  avatar           : "/assets/images/lion.png"
-  bio              : "대문자 **`I`**의 개발 스토리"
+  avatar           : "/assets/images/logos/girlearrings.jpg"
+  bio              : "대문자 **`I`**의 괴발**개발** 스토리"
   location         : "대한민국"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.name@email.com"
+      url: "codeantenna@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://codeantenna.github.io"
 
 # Site Footer
 footer:
@@ -176,7 +179,7 @@ kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..6
+  toc_levels: 1..4
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
@@ -251,6 +254,16 @@ compress_html:
 
 # Defaults
 defaults:
+  # _pages
+  # - scope:
+  #     path: ""
+  #     type: pages
+  #   values:
+  #     layout: single
+  #     author_profile: true
+      # header:
+      #   overlay_image: /assets/images/ev-gpjvRZyavZc-unsplash.jpg
+
   # _posts
   - scope:
       path: ""
@@ -265,7 +278,8 @@ defaults:
       show_date: true
       toc: true
       toc_sticky: true
-      toc_icon: edit
+      toc_icon: list
       toc_label: 컨텐츠 개요
       header:
-        overlay_image: /assets/images/ev-gpjvRZyavZc-unsplash.jpg
+        overlay_image: /assets/images/samuel-scalzo-xyuYk9oLA8I-unsplash.jpg
+        overlay_filter: rgba(100, 255, 255, 0.05)
