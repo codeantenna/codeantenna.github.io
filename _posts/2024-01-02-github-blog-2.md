@@ -2,7 +2,11 @@
 title:  "Github 블로그 HOWTO - [2]"
 search: true
 categories: 
+<<<<<<< HEAD
   - Blog
+=======
+  - blog
+>>>>>>> def6bf84056b2bbaf2f768b7715eae92d20c36d9
 tags:
   - Github Repository
   - Jekyll
@@ -31,9 +35,15 @@ Jekyll은 사이트의 디자인을 손쉽게 변경할 수 있는 다양한 템
   - [jekyllthemes.org](http://jekyllthemes.org/)  
   - [jekyllthemes.io](https://jekyllthemes.io/)  
   - [jekyll-themes.com](https://jekyll-themes.com/)  
+<<<<<<< HEAD
 {: .notice--info .text-justify}
  
  아래 그림에서 볼 수 있듯이, Github에 공개된 코드를 가져오는 주된 방법은 Download(*.zip), Clone, 그리고 Fork가 있다. 각각의 방법에 따라 작업 내용이 다르고 문제가 발생할 경우 대응 방법이  달라질 수 있기 때문에 Git에 대한 기본적인 이해가 필요하다. 이 튜토리얼에서는 프로젝트를 **Clone**하여 로컬 환경으로 가져오기로 한다. Clone은 해당 저장소의 모든 파일과 히스토리를 복사해와서 로컬 환경에서 작업할 수 있도록 한다.
+=======
+{: .notice--info}
+ 
+ 그림에서 볼 수 있듯이, Github에 공개된 코드를 가져오는 주된 방법은 Download(*.zip), Clone, 그리고 Fork가 있다. 각각의 방법에 따라 작업 내용이 다르고 문제가 발생할 경우 대응 방법이  달라질 수 있기 때문에 Git에 대한 기본적인 이해가 필요하다. 이 튜토리얼에서는 프로젝트를 **Clone**하여 로컬 환경으로 가져오기로 한다. Clone은 해당 저장소의 모든 파일과 히스토리를 복사해와서 로컬 환경에서 작업할 수 있도록 한다.
+>>>>>>> def6bf84056b2bbaf2f768b7715eae92d20c36d9
   <br/>
 
 ![깃허브](/assets/images/setup/mm_gitrepo.png){:class="align-center" width="75%" } 
