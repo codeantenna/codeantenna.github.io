@@ -8,24 +8,24 @@ search: false
 /*
    Colors
    ========================================================================== */
-$gray: #7a8288 !default;
-$dark-gray: mix(#000, $gray, 50%) !default;
-$darker-gray: mix(#000, $gray, 60%) !default;
-$light-gray: mix(#fff, $gray, 50%) !default;
-$lighter-gray: mix(#fff, $gray, 90%) !default;
-
 $background-color: #ffffff !default;
 $primary-color: #2aa0bb !default;
 $footer-background-color: #296c99 !default;
 $link-color: #358CA7 !default;
 $code-background-color: #eeeeee !default;
 
+$gray: #7a8288 !default;
+$dark-gray: mix(#000, $gray, 50%) !default;
+$darker-gray: mix(#000, $gray, 60%) !default;
+$light-gray: mix(#fff, $gray, 50%) !default;
+$lighter-gray: mix(#fff, $gray, 90%) !default;
+
 $text-color: $dark-gray !default;
 $muted-text-color: mix(#fff, $text-color, 20%) !default;
 $border-color: $lighter-gray !default;
 
 /*
-   Grid
+   Sidebar Width
    ========================================================================== */
 $right-sidebar-width-narrow: 180px !default;
 $right-sidebar-width: 270px !default;
@@ -41,7 +41,17 @@ $max-width: 1440px !default;
 @import "minimal-mistakes"; // main partials
 
 /*
-     Table of contents navigation
+   오른쪽 사이드바의 패딩 설정
+   ========================================================================== */
+
+   .sidebar__right {
+    @include breakpoint($large) {
+        padding-left: 1.5em; 
+    }
+}
+
+/*
+     Table of Contents navigation
      ========================================================================== */
 
 .toc {
@@ -57,6 +67,18 @@ $max-width: 1440px !default;
 }
 
 /*
+   블로그 헤더
+   ========================================================================== */
+   .page__hero {
+    &--overlay {
+        .page__lead {
+            max-width: 768px;
+            font-size: 0.9em;
+        }
+    }
+}
+
+/*
    본문  글자 크기
    ========================================================================== */
 .page__content p, .page__content li, .page__content dl {
@@ -69,8 +91,6 @@ $max-width: 1440px !default;
 .search-content .search-input {
     font-size: 1.2em !important;
 }
-
-
 
 /*
    링크의 밑줄 제거
@@ -144,15 +164,6 @@ pre {
     }
 }
 
-/*
-   오른쪽 사이드바의 패딩 설정
-   ========================================================================== */
-
-.sidebar__right {
-    @include breakpoint($large) {
-        padding-left: 1.5em; 
-    }
-}
 
 /*
    content 글자 크기 설정
@@ -167,18 +178,4 @@ pre {
         font-size: $type-size-6;
     }
 }
-    
-/*
-   오버레이 헤딩 
-   ========================================================================== */
-.page__hero {
-    &--overlay {
-        h1 {
-            color: #fff;
-        }
-    }
-}
 
-.page__lead {
-    font-size: $type-size-5;
-}
